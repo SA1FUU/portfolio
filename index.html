@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./project.css">
+    <link rel="stylesheet" href="./contact.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4ee16d8c51.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- SMTP JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Title -->
+    <title>Saif's Portfolio (Project)</title>
+
+</head>
+
+<body id="body">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2><a href="#home">Saifu</a></h2>
+                <button class="menu-btn">=</button>
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="anchors">Home</a></li>
+                    <li><a href="#about" class="anchors">About</a></li>
+                    <li><a href="#projects" class="anchors">Projects</a></li>
+                    <li><a href="#contact" class="anchors">Contact</a></li>
+                </ul>
+            </div>
+            <button id="theme-btn">Light</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+
+        <section class="landing-page section " id="home">
+            <div class="landing-contents">
+                <h5 class="main-para" id="main-h5">Hi,</h5>
+                <h1 id="main-h1" class="main-heading">I Am <span id="h1-span">Web Designer</span></h1>
+                <p class="long-para main-para" id="main-p">
+                    I specialize in crafting visually stunning and
+                    <br>user-friendly interfaces that leave a lasting
+                    <br> impression. As you explore my portfolio
+                    <br>you'll find a showcase of my latest projects
+                </p>
+                <div class="cv-button">
+                    <button id="cv-button">CV / Resume</button>
+                </div>
+            </div>
+            <div class="cv-card">
+                <a id="cv-anchor"  href="https://drive.google.com/uc?id=1W5NZwKaa9DePR101C7GxwZ9lOHAYlzx-" target="_blank">
+                    <button class="main-para"  id="cv-dwnld-btn">Download <i id="cv-dwnld" class="fa-solid fa-download"></i></button>
+                </a>
+                <button id="card-close">x</button>
+            </div>
+        </section>
+
+        <!-- About Page -->
+
+        <section class="about-page section" id="about">
+            <h2 id="h2-about">ABOUT</h2>
+
+            <div class="sub-section ">
+                <div class="img-card card hidden2">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.eW1DoeB6KjNu4ICWue6LkwHaJ4&pid=Api&rs=1&c=1&qlt=95&w=75&h=100" alt="">
+                </div>
+    
+                <div class="info-card card hidden1">
+                    <p class="top-para para main-para">Hello Everyone, I Am </p>
+                    <h1 class="h1 main-para">MOHD SAIF</h1>
+                    <h4 class="h4 main-para">Front End Web Developer</h4>
+                    <p class="long-para main-para">
+                             Lorem ipsum dolor, sit amet consectetur
+                        <br> adipisicing elit. Ipsum dolor nemo nesciunt
+                        <br> a beatae earum adipisci totam aliquid quas
+                        <br> delectus?
+                    </p>
+    
+                    <div class="dob sos">
+                        <i class="fa-solid fa-calendar main-para"> </i>
+                        <p class="main-para">3rd August 2001</p>
+                    </div>
+    
+                    <div class="email-add sos">
+                        <i class="fa-solid fa-envelope main-para"> </i>
+                        <p class="main-para">contactsaif03@gmail.com</p>
+                    </div>
+    
+                    <div class="ph-number sos">
+                        <i class="fa-solid fa-phone main-para"> </i>
+                        <p class="main-para">+91-9792352507</p>
+                    </div>
+    
+                    <div class="sm">
+                        <a class="sm-a" href="">
+                            <i class="fa-brands fa-twitter about-socials"></i>
+                        </a>
+                        <a class="sm-a" href="">
+                            <i class="fa-brands fa-instagram about-socials">
+    
+                            </i></a>
+                        <a class="sm-a" href="">
+                            <i class="fa-brands fa-linkedin-in about-socials"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+
+        <section class="projects-page section " id="projects">
+
+            <h2 id="h2-projects">PROJECTS</h2>
+            <div class="media">
+
+                <button class="main-para" id="prev"><</button>
+            
+                <div class="media-scroller">
+            
+                    <div class="media-element">
+                        <img class="p-img" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849821_1280.jpg" alt="">
+                        <h3 class="p-h3 main-para">PROJECT - 1</h3>
+                        <p class="p-p main-para">Lorem ipsum dolor <br> sit  amet consectetur adipisicing elit. <br> Labore, nam!</p>
+                        <button class="p-button main-para">Know More</button>
+                    </div>
+            
+                    <div class="media-element">
+                        <img class="p-img" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849821_1280.jpg" alt="">
+                        <h3 class="p-h3 main-para">PROJECT - 2</h3>
+                        <p class="p-p main-para">Lorem ipsum dolor <br> sit  amet consectetur adipisicing elit. <br> Labore, nam!</p>
+                        <button class="p-button main-para">Know More</button>
+                    </div>
+            
+                    <div class="media-element">
+                        <img class="p-img" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849821_1280.jpg" alt="">
+                        <h3 class="p-h3 main-para">PROJECT - 3</h3>
+                        <p class="p-p main-para">Lorem ipsum dolor <br> sit  amet consectetur adipisicing elit. <br> Labore, nam!</p>
+                        <button class="p-button main-para">Know More</button>
+                    </div>
+            
+                    <div class="media-element">
+                        <img class="p-img" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849821_1280.jpg" alt="">
+                        <h3 class="p-h3 main-para">PROJECT - 4</h3>
+                        <p class="p-p main-para">Lorem ipsum dolor <br> sit  amet consectetur adipisicing elit. <br> Labore, nam!</p>
+                        <button class="p-button main-para">Know More</button>
+                    </div>
+            
+                    <div class="media-element">
+                        <img class="p-img" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849821_1280.jpg" alt="">
+                        <h3 class="p-h3 main-para">PROJECT - 5</h3>
+                        <p class="p-p main-para">Lorem ipsum dolor <br> sit  amet consectetur adipisicing elit. <br> Labore, nam!</p>
+                        <button class="p-button main-para">Know More</button>
+                    </div>
+            
+                    <div class="media-element">
+                        <img class="p-img" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849821_1280.jpg" alt="">
+                        <h3 class="p-h3 main-para">PROJECT - 6</h3>
+                        <p class="p-p main-para">Lorem ipsum dolor <br> sit  amet consectetur adipisicing elit. <br> Labore, nam!</p>
+                        <button class="p-button main-para">Know More</button>
+                    </div>
+                   
+                </div>
+            
+                <button class="main-para" id="next">></button>
+            
+               </div>
+        </section>
+
+        <!-- Contact Page -->
+
+        <section class="contact-page section" id="contact">
+            <div class="form-container">
+                <h2 id="h2-contact">CONTACT US</h2>
+                <form action="#" id="form" class="form">
+
+                    <h3 id="h3-contact">Drop Details Below To Get In Touch</h3>
+
+                    <input type="text" id="name" placeholder="Full Name" name="name">
+                    <input type="email" id="email" placeholder="Email Adddress" name="email">
+                    <input type="text" id="number" placeholder="Phone Number" name="phone-number">
+                    <input type="text" id="message" placeholder="Your Message" name="message">
+                    <p id="errorPara"></p>
+                    <button id="submit-button">Hand In</button>
+
+                </form>
+
+                <div class="popup-card">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.MTRz3f5ADkHBDFBD4BDTxwHaGo&pid=Api&rs=1&c=1&qlt=95&w=130&h=116"
+                        alt="">
+                    <h2>Thank You</h2>
+                    <h4>We Will Connect Shortly</h4>
+                    <button id="close-button">Close</button>
+                </div>
+
+            </div>
+            <script src="./contact.js"></script>
+        </section>
+
+    </main>
+
+    <section class="footer-section">
+        <footer>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-github footer-social main-para"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin footer-social main-para"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter footer-social main-para"></i></a>
+            </div>
+            <div class="copyright main-para">
+                &copy-SA1FUU 2023 All Rights Reserved
+            </div>
+        </footer>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

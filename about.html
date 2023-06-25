@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <!-- <link rel="stylesheet" href="about.css"> -->
+    <script src="https://kit.fontawesome.com/4ee16d8c51.js" crossorigin="anonymous"></script>
+    <title>About</title>
+</head>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    
+}
+
+/* About Page */
+
+.about-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95vw;
+    max-height: 95vh;
+}
+
+.sub-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    width: 35rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    /* border: 1px dotted blueviolet; */
+}
+
+.card {
+    margin: 0 1rem;
+}
+
+.img-card {
+    height: 20rem;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #000;
+    border-radius: 1rem;
+    /* border: 1px solid green; */
+}
+
+.img-card img {
+    height: 20rem;
+    width: 25rem;
+}
+
+.info-card {
+    height: 20rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    padding-left: 1rem;
+}
+
+.hidden1 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+.hidden2 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media all and (max-width: 580px) {
+    .card{
+        margin: 0;
+    }
+   .img-card{
+    /* border: 1px solid red; */
+    margin-left: 0.2rem;
+    transform: scale(0.9);
+    width: 9rem;
+   }
+   .info-card{
+    padding: 0 0.2rem;
+    margin-right: 0;
+    /* border: 1px solid blue; */
+    width: 14rem;
+    transform: scale(0.9);
+   }
+   .info-card .h1{
+    font-size: 2rem;
+   }
+}
+
+.top-para,
+.h1,
+.h4,
+.long-para {
+    position: relative;
+    top: -2rem;
+    padding: 2px 0;
+}
+
+.top-para {
+    color: #ccc;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    border-radius: 5px;
+}
+
+.h4 {
+    color: #ccc;
+    font-size: 0.8rem;
+}
+
+.long-para {
+    color: #ccc;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.sos {
+    display: flex;
+    color: #ccc;
+    margin: 3px;
+    position: relative;
+    top: -1rem;
+}
+
+.sos p {
+    font-size: 13px;
+}
+
+.fa-solid {
+    margin-right: 0.7rem;
+    transform: scale(0.8);
+}
+
+.sm {
+    position: relative;
+    top: 1rem;
+}
+
+.fa-brands {
+    transform: scale(2);
+    margin: 0 1.7rem;
+    color: #ccc;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.sm-a {
+    text-decoration: none;
+}
+</style>
+
+<body>
+    <section style="height: 100vh;">
+        <h1>Hemlo</h1>
+    </section>
+
+    <section class="about-page section" id="about">
+        <div class="sub-section ">
+            <div class="img-card card hidden2">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.eW1DoeB6KjNu4ICWue6LkwHaJ4&pid=Api&rs=1&c=1&qlt=95&w=75&h=100" alt="">
+            </div>
+
+            <div class="info-card card hidden1">
+                <p class="top-para para">Hello Everyone, I Am </p>
+                <h1 class="h1">MOHD SAIF</h1>
+                <h4 class="h4">Front End Web Developer</h4>
+                <p class="long-para">Lorem ipsum dolor, sit amet consectetur
+                    <br> adipisicing elit. Ipsum dolor nemo nesciunt
+                    <br> a beatae earum adipisci totam aliquid quas
+                    <br> delectus?
+                </p>
+
+                <div class="dob sos">
+                    <i class="fa-solid fa-calendar"> </i>
+                    <p>3rd August 2001</p>
+                </div>
+
+                <div class="email-add sos">
+                    <i class="fa-solid fa-envelope"> </i>
+                    <p>contactsaif03@gmail.com</p>
+                </div>
+
+                <div class="ph-number sos">
+                    <i class="fa-solid fa-phone"> </i>
+                    <p>+91-9792352507</p>
+                </div>
+
+                <div class="sm">
+                    <a class="sm-a" href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a class="sm-a" href="">
+                        <i class="fa-brands fa-instagram">
+
+                        </i></a>
+                    <a class="sm-a" href="">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    const observer2 = new IntersectionObserver((enteries) => {
+        enteries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show")
+            }
+            else {
+                entry.target.classList.remove("show")
+            }
+        })
+    })
+
+    let hidddenElements1 = document.querySelectorAll('.hidden1')
+    let hidddenElements2 = document.querySelectorAll('.hidden2')
+    let hidddenElements3 = document.querySelectorAll('.hidden3')
+
+    hidddenElements1.forEach(el1 => observer2.observe(el1))
+    hidddenElements2.forEach(el2 => observer2.observe(el2))
+    hidddenElements3.forEach(el3 => observer2.observe(el3))
+</script>
+
+</html>

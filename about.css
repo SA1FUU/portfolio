@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* About Page */
+
+.about-page{
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95vw;
+    max-height: 95vh;
+}
+
+#h2-about{
+    color: #a59b9b;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: underline ;
+    margin-top: 3rem;
+}
+.sub-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    width: 35rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    /* border: 1px dotted blueviolet; */
+}
+
+.card {
+    margin: 0 1rem;
+}
+
+.img-card {
+    height: 21rem;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #000;
+    border-radius: 1rem;
+    /* border: 1px solid green; */
+}
+
+.img-card img {
+    height: 25rem;
+    width: 25rem;
+}
+
+.info-card {
+    height: 20rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    padding-left: 1rem;
+}
+
+.hidden1 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+.hidden2 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media all and (max-width: 580px) {
+    .card{
+        margin: 0;
+    }
+   .img-card{
+    /* border: 1px solid red; */
+    margin-left: 0.2rem;
+    transform: scale(0.9);
+    width: 9rem;
+   }
+   .info-card{
+    padding: 0 0.2rem;
+    margin-right: 0;
+    /* border: 1px solid blue; */
+    width: 14rem;
+    transform: scale(0.9);
+   }
+   .info-card .h1{
+    font-size: 2rem;
+   }
+}
+
+.top-para,
+.h1,
+.h4,
+.long-para {
+    position: relative;
+    top: -2rem;
+    padding: 2px 0;
+}
+
+.top-para {
+    color: #ccc;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    border-radius: 5px;
+}
+
+.h4 {
+    color: #ccc;
+    font-size: 0.8rem;
+}
+
+.long-para {
+    color: #ccc;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.sos {
+    display: flex;
+    color: #ccc;
+    margin: 3px;
+    position: relative;
+    top: -1rem;
+}
+
+.sos p {
+    font-size: 13px;
+}
+
+.fa-solid {
+    margin-right: 0.7rem;
+    transform: scale(0.8);
+}
+
+.sm {
+    position: relative;
+    top: 1rem;
+}
+
+.about-socials {
+    transform: scale(2);
+    margin: 0 1rem;
+    color: #ccc;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 0.2rem;
+    transform: scale(1.5);
+    transition: 0.4s ease;
+}
+.about-socials:hover{
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.sm-a {
+    text-decoration: none;
+}
+
