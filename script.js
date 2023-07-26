@@ -87,14 +87,14 @@ themeBtn.addEventListener("click", () => {
 
 // For Adding Active Class on Click
 
-let anchorTags = document.querySelectorAll('.anchors')
+// let anchorTags = document.querySelectorAll('.anchors')
 
-anchorTags.forEach(navLinks => {
-    navLinks.addEventListener("click", () => {
-        document.querySelector(".active")?.classList.remove("active")
-        navLinks.classList.add("active")
-    })
-})
+// anchorTags.forEach(navLinks => {
+//     navLinks.addEventListener("click", () => {
+//         document.querySelector(".active")?.classList.remove("active")
+//         navLinks.classList.add("active")
+//     })
+// })
 
 // For Closing Navbar on clicking Anchor Tags
 
