@@ -87,7 +87,7 @@ themeBtn.addEventListener("click", () => {
 
 // For Adding Active Class on Click
 
-// let anchorTags = document.querySelectorAll('.anchors')
+let anchorTags = document.querySelectorAll('.anchors')
 
 // anchorTags.forEach(navLinks => {
 //     navLinks.addEventListener("click", () => {
