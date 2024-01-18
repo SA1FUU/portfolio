@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4ee16d8c51.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- Tab Icon -->
+    <link rel="Icon" type="image/x-icon" href="./tab-icon.png">
+    <!-- Title -->
+    <title>Portfolio</title>
+    <meta>
+</head>
+
+<body id="top">
+    <header id="header">
+        <div class="logo">
+            <h3><a href="#home">Portfolio</a></h3>
+        </div>
+
+        <ul class="hide-navmenu">
+            <li><a class="hover-line" href="#home">About</a></li>
+            <li><a class="hover-line" href="#project">Projects</a></li>
+            <li><a class="hover-line" href="#contact">Contact</a></li>
+            <li><a id="resume">My Resume <i class="fa-solid fa-download"></i></a></li>
+        </ul>
+
+        <i class="fa-solid fa-burger" id="burger"></i>
+
+    </header>
+
+
+    <div class="main-section" id="home">
+
+        <div class="top-main">
+
+            <div class="right-section">
+                <img src="/profile.png" alt="" draggable="false">
+            </div>
+
+            <div class="left-section">
+                <h5>I Am</h5>
+                <h1>Mohd Saif</h1>
+                <h2>A Passionate <b>Web Developer</b></h2>
+                <p>
+                    I specialize in crafting visually stunning and
+                    user-friendly interfaces that leave
+                     a lasting impression. As you explore my portfolio
+                     you'll find a showcase of my latest projects
+                </p>
+            </div>
+
+        </div>
+
+        <div class="bottom-main" id="skills">
+            <h5>Skills</h5>
+            <h1>Technologies <i class="fa-solid fa-turn-down"></i></h1>
+
+            <div class="skills">
+
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+
+                <div class=" skill">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class=" skill">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React JS</h3>
+                </div>
+
+                <div class=" skill">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- <a href="#skills" class="fa-solid fa-chevron-down"></a> -->
+    </div>
+
+    <div class="projects" id="project">
+
+        <h1>Minor Projects <i class="fa-solid fa-turn-down"></i></h1>
+
+        <div class="card-container">
+
+            <div class="cards">
+                <h3>Guess The No.</h3>
+                <p>A Game Made Using Basic HTML, CSS and JavaScript</p>
+                <a href="https://sa1fuu.github.io/GuessTheNumber/" target="_blank">Have a Look</a>
+            </div>
+
+            <div class="cards">
+                <h3>Weather App</h3>
+                <p>Made Using HTML, CSS, JavaScript and a Weather API</p>
+                <a href="https://sa1fuu.github.io/weather-app/" target="_blank">Have a Look</a>
+            </div>
+
+            <div class="cards">
+                <h3>Tic Tac Toe</h3>
+                <p>Made Using HTML, CSS and JavaScript</p>
+                <a href="https://sa1fuu.github.io/TicTacToe/" target="_blank">Have a Look</a>
+            </div>
+
+            <div class="cards">
+                <h3>To-Do List App</h3>
+                <p>Made Using HTML, CSS and JavaScript</p>
+                <a href="https://sa1fuu.github.io/Tasks-List/" target="_blank">Have a Look</a>
+            </div>
+
+            <div class="cards">
+                <h3>Age Calculator</h3>
+                <p>Made Using HTML, CSS and JavaScript</p>
+                <a href="https://sa1fuu.github.io/Age-Calculator/" target="_blank">Have a Look</a>
+            </div>
+
+            <div class="cards">
+                <h3>Prime No. Gen.</h3>
+                <p>Made Using HTML, CSS and JavaScript</p>
+                <a href="https://sa1fuu.github.io/Prime-Number-Generator/" target="_blank">Have a Look</a>
+            </div>
+
+            <div class="cards">
+                <h3>GitHub Users</h3>
+                <p> Made Using HTML, CSS, JavaScript and Github Users API</p>
+                <a href="https://sa1fuu.github.io/Github-Users/" target="_blank">Have a Look</a>
+            </div>
+
+            <div class="cards">
+                <h3>Store Links</h3>
+                <p>Made Using HTML, CSS and JavaScript</p>
+                <a href="https://sa1fuu.github.io/Store-Links/" target="_blank">Have a Look</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="contact" id="contact">
+        <h1>Contact Form</h1>
+        <h5>Drop Your Details Below To Get in Touch</h5>
+        <div class="form-contents">
+            <form>
+                <label for="name"> Your Name</label>
+                <input type="text" id="name" required autocomplete="off" placeholder="Name Here...">
+
+                <label for="email"> Your Email</label>
+                <input type="email" id="email" required autocomplete="off" placeholder="Email Here...">
+
+                <label for="number"> Your Number</label>
+                <input type="text" id="number" autocomplete="off" placeholder="Number Here...">
+
+                <label for="message">Your Message</label>
+                <input type="text" id="message" placeholder="Message Here...">
+
+                <button class="submit">Submit</button>
+            </form>
+            <p>or</p>
+            <div class="socials">
+                <a href="https://github.com/SA1FUU/" class="fa-brands fa-github"></a>
+                <a href="https://www.linkedin.com/in/khansaif18/" class="fa-brands fa-linkedin"></a>
+                <a href="https://twitter.com/Khansaif_18/" class="fa-brands fa-twitter"></a>
+                <a href="mailto:contactsaif03@gmail.com" class="fa-regular fa-envelope"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Arrow -->
+
+    <div class="top-arrow">
+        <a href="#top" id="top-arrow" class="fa-solid fa-arrow-up"></a>
+    </div>
+
+    <div class="footer">
+        <p>Designed and Developed with ❤️ by <b>Saif</b></p>
+    </div>
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
