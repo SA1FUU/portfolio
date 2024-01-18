@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4ee16d8c51.js" crossorigin="anonymous"></script>
+    <!-- SMTP -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +39,17 @@
 
     </header>
 
+    <div class="resume-popup hide-resume">
+        <h2><i class="fa-regular fa-file-pdf"></i> Resume.pdf</h2>
+        <div class="res-btns">
+            <a class="download-res res" href="/Mohd Saif Resume.pdf" download="MohdSaifResume.pdf">Download</a>
+            <a class="open-res res" aria-disabled=""
+                href="https://drive.google.com/file/d/1Mqix5j_Ca9PJ4_Yzl-LwaAa5gBVnDWFV/view?usp=sharing"
+                target="_blank">Open in Browser</a>
+        </div>
+        <i class="fa-solid fa-x" id="close-res"></i>
+    </div>
+
 
     <div class="main-section" id="home">
 
@@ -53,8 +66,8 @@
                 <p>
                     I specialize in crafting visually stunning and
                     user-friendly interfaces that leave
-                     a lasting impression. As you explore my portfolio
-                     you'll find a showcase of my latest projects
+                    a lasting impression. As you explore my portfolio
+                    you'll find a showcase of my latest projects
                 </p>
             </div>
 
@@ -158,7 +171,7 @@
         <h1>Contact Form</h1>
         <h5>Drop Your Details Below To Get in Touch</h5>
         <div class="form-contents">
-            <form>
+            <form id="form">
                 <label for="name"> Your Name</label>
                 <input type="text" id="name" required autocomplete="off" placeholder="Name Here...">
 
@@ -171,7 +184,7 @@
                 <label for="message">Your Message</label>
                 <input type="text" id="message" placeholder="Message Here...">
 
-                <button class="submit">Submit</button>
+                <button class="submit" id="submit">Submit</button>
             </form>
             <p>or</p>
             <div class="socials">
