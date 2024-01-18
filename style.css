@@ -315,6 +315,7 @@ header ul li a:hover {
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
+        height: 70vh;
     }
 
     .left-section {
