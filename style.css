@@ -234,8 +234,8 @@ header ul li a:hover {
     }
     .res-btns{
         display: flex;
-        border: 1px solid red;
         padding: 15px 0;
+        align-items: center ;
         gap: 10px;
         width: 100%;
     }
