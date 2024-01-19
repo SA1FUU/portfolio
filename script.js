@@ -18,7 +18,7 @@ let burger = document.getElementById('burger')
 
 burger.addEventListener("click", () => {
     ul.classList.toggle("hide-navmenu")
-
+    hideResume()
 })
 
 let li = document.querySelectorAll('li')

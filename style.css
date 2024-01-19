@@ -89,7 +89,6 @@ header ul li a:hover {
     height: 10rem;
     padding: 1rem 2rem;
     border-radius: 8px;
-    box-shadow: 1px 1px 10px rgba(239, 232, 232, 0.208);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -119,8 +118,11 @@ header ul li a:hover {
 }
 
 .resume-popup .res-btns {
-    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
     padding: 5px 0;
+    gap: 1rem;
 }
 
 .res-btns .download-res {
@@ -185,6 +187,12 @@ header ul li a:hover {
         padding: 5px 2px;
         margin: 0 10px;
     }
+    .resume-popup{
+        width: 60vw;
+    }
+    /* .res-btns{
+        gap: 1rem;
+    } */
 }
 
 /* Mobile Phone Reso */
@@ -759,7 +767,7 @@ form button:focus{
 
 .footer p {
     color: #ccc;
-    word-spacing: 2px;
+    word-spacing: 1px;
     letter-spacing: 1px;
 }
 
