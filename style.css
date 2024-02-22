@@ -98,7 +98,7 @@ header ul li a:hover {
     transition: 0.3s ease-in;
 }
 
-.hide-resume{
+.hide-resume {
     transform: translateY(-350%);
     overflow: hidden;
 }
@@ -161,7 +161,7 @@ header ul li a:hover {
     border: 1px solid #fff;
 }
 
-.fa-x{
+.fa-x {
     color: #ccc;
     position: absolute;
     top: 10px;
@@ -187,18 +187,15 @@ header ul li a:hover {
         padding: 5px 2px;
         margin: 0 10px;
     }
-    .resume-popup{
+
+    .resume-popup {
         width: 60vw;
     }
-    /* .res-btns{
-        gap: 1rem;
-    } */
 }
 
 /* Mobile Phone Reso */
 
 @media (max-width:730px) {
-
     header ul {
         display: flex;
         flex-direction: column;
@@ -231,23 +228,27 @@ header ul li a:hover {
         position: relative;
         left: 1rem;
     }
-    .resume-popup{
-        width: 70vw ;
+
+    .resume-popup {
+        width: 70vw;
     }
-    .resume-popup h2{
+
+    .resume-popup h2 {
         margin-top: 1rem;
         overflow: hidden;
         padding-left: 0;
-        padding-right   : 0;
+        padding-right: 0;
     }
-    .res-btns{
+
+    .res-btns {
         display: flex;
         padding: 15px 0;
-        align-items: center ;
+        align-items: center;
         gap: 10px;
         width: 100%;
     }
-    .open-res{
+
+    .open-res {
         overflow: hidden;
         text-align: center;
         padding: 15px 1rem;
@@ -307,8 +308,8 @@ header ul li a:hover {
 }
 
 .main-section .right-section img {
+    height: 300px;
     width: 100%;
-    height: 100%;
 }
 
 @keyframes swing {
@@ -511,11 +512,14 @@ header ul li a:hover {
     text-align: center;
     justify-content: center;
     border: 1px solid #009688;
+    position: relative;
+    overflow: hidden;
 }
 
 
 .projects .cards h3 {
     color: #009688;
+    margin-bottom: 10px;
 }
 
 .projects .cards p {
@@ -524,14 +528,34 @@ header ul li a:hover {
     font-size: 13px;
 }
 
+
 .projects .cards a {
     text-decoration: none;
     color: #ccc;
     border: 1px solid #009688;
     padding: 5px 25px;
-    margin-top: 15px;
+    backdrop-filter: blur(1px);
     border-radius: 20px;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.link-cont {
+    transform: translateY(200px);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 0.2s ease;
+}
+
+.cards:hover .link-cont {
+    transform: translateY(0);
+    height: 100%;
+    width: 100%;
 }
 
 .projects .cards a:hover {
@@ -669,7 +693,7 @@ form button:hover {
     box-shadow: 0px 0px 7px #ddd6d663;
 }
 
-form button:focus{
+form button:focus {
     border: 1px solid #009688;
 }
 
@@ -785,6 +809,6 @@ form button:focus{
     }
 }
 
-#burger{
+#burger {
     display: none;
 }
