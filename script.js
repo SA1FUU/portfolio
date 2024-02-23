@@ -1,4 +1,4 @@
-// Show to Move to Top Icon
+// Show Move to Top Icon
 
 window.addEventListener('scroll', function () {
     var topArrow = document.getElementById('top-arrow');
@@ -115,5 +115,5 @@ function Submit() {
     submit.innerText = "Done 👍"
     setTimeout(() => {
         submit.innerText = "Submit"
-    }, 1500);
+    }, 3000);
 }
